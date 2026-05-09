@@ -168,15 +168,6 @@ const calculateCredits = (credits) => {
  * 3. Cache the fetched values for future use
  */
 const getTaxRates = (year) => {
-  // For production, you would implement:
-  // try {
-  //   const rates = await fetchIRSTaxRates(year);
-  //   return rates;
-  // } catch (err) {
-  //   console.error(`Failed to fetch IRS rates for ${year}, using fallback:`, err.message);
-  //   return getFallbackRates(year);
-  // }
-
   // For now, use fallback rates
   // The fetching infrastructure is in place - just need the actual HTML structure
   return getFallbackRates(year);
