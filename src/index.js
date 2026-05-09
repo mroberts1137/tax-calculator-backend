@@ -33,7 +33,7 @@ app.use('/api/tax', taxRoutes);
 const { errorHandler } = require('./middleware/errorHandler');
 app.use(errorHandler);
 
-const PORT = 5000; //process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 mongoose
   .connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/taxcalc', {
